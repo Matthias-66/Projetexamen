@@ -1,0 +1,31 @@
+
+
+body {
+	
+}
+.mid_block {
+	position: absolute;
+}
+.mid_block img {
+	width:750px;
+	height:700px;
+	position: relative;
+	float:left;
+
+}
+.txt_intro {
+	padding: 10px 20px;
+	
+}
+
+.txt_intro p {
+	font-size: 18px;
+	text-align: justify;
+}
+
+
+footer {
+	
+}
+
+
