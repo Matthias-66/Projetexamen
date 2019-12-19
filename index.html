@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Portfolio</title>
-	<link rel="icon" type="image/jpg" href="C:\Users\mpere\Projetexamen\image\P.jpg">
+	   <link rel="icon" type="image/jpg" href="C:\Users\mpere\Projetexamen\image\P.jpg">
+    <link rel="stylesheet" type="text/css" href="engine1/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -51,13 +52,16 @@
               </li>
             </ul>
           </li>
-          
            <li>
-            <a href="contact.htmlg" title="Recomendation Professionelle">recommandation </br>professionnelle</a>
+            <a href="contact.htmlg" title="projet">projet</a>
+          </li>
+           <li>
+            <a href="contact.htmlg" title="Recomendation">recommandation</a>
           </li>
           <li>
             <a href="contact.htmlg" title="CONTACT">CONTACT</a>
           </li>
+         
         </ul>
       </nav>
     </header>
@@ -72,17 +76,16 @@
       		<div class="mySlides fade">
           		<img src="image\slider 3.jpg" style="width:100%">
       		</div> 
-          <div class="overlay">
-            <div class="text">
-              BLABLABLA
-            </div>
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
           </div>
         </div>      
     	</div>
     	<script>
       		var slideIndex = 0;
       		showSlides();
-
       		function showSlides() {
           		var i;
           		var slides = document.getElementsByClassName("mySlides");
@@ -97,7 +100,7 @@
           		}
          		slides[slideIndex-1].style.display = "block";  
          		dots[slideIndex-1].className += " active";
-          		setTimeout(showSlides, 1000);
+          		setTimeout(showSlides,3000);
      		}
       </script> 
       <section>
