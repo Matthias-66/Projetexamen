@@ -17,6 +17,54 @@ header {
     z-index: 10000000;
 }
 
+                /*---------------------------------- HEADER TITLE ------------------------------------ */
+
+section.header_title {
+    height: 300px;
+    overflow: hidden;
+
+}
+
+section.header_title h1 {
+    font-size: 40px;
+    font-style: oblique;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    position: relative;
+    top: 100px;
+}
+section.acceuil_title {
+    height: 300px;
+    padding: 90px 20px 10px 10px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 800px;
+
+}
+
+section.acceuil_title h1 {
+    font-size: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.txt_acceuil{
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 1000;
+    display: block;
+}
+
+section p:first-child {
+    margin-top: 0;
+}
+
+                /*---------------------------------------------------------- FIN HEADER TITLE------------------------------------------------------------------- */
+
 ul.rs {
     list-style-type: none;
     padding: 0;
@@ -102,20 +150,7 @@ ul.niv_2 li a:focus {
     background-color:#000;
     color: #D20000;
 }
-/*------------------------------------------------------------------- HEADER TITLE------------------------------------------------------------------- */
 
-section.header_title {
-    height: 300px;
-    overflow: hidden;
-
-}
-
-section.header_title h1 {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFF;
-}
 
 /*------------------------------------------------------------------- SLIDER IMAGE -------------------------------------------------------------------*/
 
@@ -157,8 +192,90 @@ div.fade {
 /*------------------------------------------------------------------- MIDBLOCK -------------------------------------------------------------------*/
 
 .mid_block {
-    padding: 40px 100px 0 400px;
-    margin-top: 50px;
+    padding: 0px 100px 0 400px;
+    margin-top: 0px;
+}
+
+/*------------------------------------------------------------------- MIDBLOCK_PROJET -------------------------------------------------------------------*/
+
+.mid_block_projet aside {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    margin-top: 200px;
+    display: inline-block;
+}
+
+.mid_block_projet a {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0px 1px 11px rgba(0,0,0,0.4);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.mid_block_projet a div {
+    position: absolute;
+    bottom: -210px;
+    left: 0;
+    background-color: #FFf;
+    width: 100%;
+    height: 250px;
+    padding: 5px 10px;
+    transition: all 0.4s ease;
+}
+
+.mid_block_projet a:hover div,
+.mid_block_projet a:focus div {
+    bottom: 0;
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+.mid_block_projet a:hover div span.title,
+.mid_block_projet a:focus div span.title {
+    padding-top: 20px;
+}
+
+.mid_block_projet a div span {
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.mid_block_projet a div span.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #D20000
+}
+
+.mid_block_projet a div span.txt {
+    color: #D20000
+}
+
+.mid_block_projet a div span.date {
+    font-size: 11px;
+    font-style: italic;
+    padding-bottom: 5px;
+    color: #D20000
+}
+
+.mid_block_projet section {
+    padding: 10px 20px;
+}
+
+.mid_block_projet section p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.mid_block_projet section p:first-child {k
+    margin-top: 0;
 }
 
 .mid_block aside {
@@ -184,13 +301,10 @@ div.fade {
 
 .mid_block a div {
     position: absolute;
-    bottom: -210px;
     left: 0;
     background-color: #FFf;
     width: 100%;
-    height: 250px;
     padding: 5px 10px;
-    transition: all 0.4s ease;
 }
 
 .mid_block a:hover div,
@@ -221,18 +335,103 @@ div.fade {
 }
 
 .mid_block section {
-    padding: 10px 20px;
+    padding: 10px 0px 20px 300px;
 }
 
 .mid_block section p {
     font-size: 18px;
     text-align: justify;
+    float: right;
 }
 
 .mid_block section p:first-child {
     margin-top: 0;
+    position: relative;
+    
 }
 
+.conteneur {
+    height:700px;
+    width:1518px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding:20px;
+    font:12px arial;
+}
+ 
+.conteneur .left {
+    float:left;
+    width:700px;
+    height:700px;
+    padding:20px;
+    margin-top:40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.conteneur .left .head_title{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+.conteneur .block_left {
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.conteneur .right {
+    width:700px;
+    height:700px;
+    padding:20px;
+    margin-left:740px;
+    margin-top:40px;
+}
+
+.conteneur .right .head_title {
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+.conteneur .block_right{
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+/*-------------------------------------------- footer --------------------------------------**/
+
+footer {
+    box-shadow: 0px 1px 11px rgba(0,0,0,0.4);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    padding: 20px 100px 20px 100px;
+    background-color: #C0C0C0;
+    z-index: 10000000000;
+}
+
+footer .right {
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+
+ul.footer_links {
+    list-style-type: none;
+}
+
+ul.footer_links li {
+    display: inline-block;
+    padding: 4px 8px;
+}
 
 /*------------------------------------------------------------------- TEXT ACCEUIL -------------------------------------------------------------------*/
 
@@ -245,4 +444,119 @@ div.txt_acceuil{
 
 section p:first-child {
     margin-top: 0;
+}
+
+/*---------------------------------------------------------------- Compétence diagramme ---------------------------------------------------------------*/
+ .pie {
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: yellowgreen;
+  display: inline-block;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-bottom: 150px;
+  background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+
+.pie:before {
+  
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-image: : #655;
+  transform-origin: left;
+  transform: rotate(.1turn);
+}
+.pie a {
+    position: center;
+
+
+
+/*---------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------*/
+
+}
+form {
+    margin: 0 auto;
+    width: 700px;
+    border:  1px solid #CCC;
+    border-radius: 1em;
+    padding-top: 10em;
+    background-color: #000;
+    opacity: 0.7;
+    padding-left: 10px;
+}
+
+form div + div {
+    margin-top: 4em;
+}
+
+label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    font : normal 300 16px/1 'Comfortaa', cursive;
+    color: #D20000;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 3px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #FFF;
+}
+
+textarea {
+    vertical-align: top;
+    height: 7em;
+}
+
+button {
+    margin-left: 248px;
+    font : normal 300 18px/1 'Comfortaa', cursive;
+    margin-bottom: 25px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=mail], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea[id=msg], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
