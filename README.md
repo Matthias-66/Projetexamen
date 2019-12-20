@@ -10,8 +10,8 @@ Pour pouvoir profiter pleinement du design et des fonctionnalités du site il es
 
 HTML5 - Pour créer la page internet
 CSS3 - Pour la styliser
-
+Javascript - Slyder images
 # Auteurs
 
 CLOCHARD Mathieu
-AMELINE Matthias - Matthias
+AMELINE Matthias 
